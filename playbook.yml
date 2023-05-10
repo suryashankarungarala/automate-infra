@@ -24,4 +24,4 @@
       git:
         repo:
         dest: /var/www/html/
-        version: front
+        version: main
