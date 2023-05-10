@@ -11,7 +11,7 @@ resource "aws_instance" "one" {
   instance_type   = "t2.micro"
   key_name        = "surya"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone = "ap-south-1a"
+  availability_zone = "us-east-1a"
     tags = {
     Name = "web-server-1"
   }
@@ -22,7 +22,7 @@ resource "aws_instance" "two" {
   instance_type   = "t2.micro"
   key_name        = "surya"
   vpc_security_group_ids = [aws_security_group.three.id]
-  availability_zone = "ap-south-1b"
+  availability_zone = "us-east-1b"
     tags = {
     Name = "web-server-2"
   }
